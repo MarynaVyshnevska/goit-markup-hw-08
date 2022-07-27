@@ -2,7 +2,14 @@
 .come-on {
 
     &__inner {
-        margin-left: 70px;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 60px;
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            margin-left: 70px;
+            margin-bottom: 0;
+        }
     }
 
     &__title {
@@ -14,6 +21,14 @@
         margin-bottom: 20px;
         margin-top: 12px;
     }
+
+    &__list {
+        justify-content: center;
+
+        @media screen and (min-width: 1200px) {
+            justify-content: left;
+        }
+    } 
 
     &__icon {
         fill: var(--color-accent0);
