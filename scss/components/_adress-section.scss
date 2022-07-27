@@ -1,0 +1,35 @@
+.address {
+    &__inner {
+        margin-top: 20px;
+    }
+
+    &__li {
+        margin-top: 9px;
+    }
+
+    &__text,
+    &__link {
+        font-size: 14px;
+        line-height: 1.72;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        font-style: normal;
+        /* иначе курсив не выключить */
+    }
+
+    &__text {
+        color: var(--color-accent0);
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link {
+        color: var(--color-accent3);
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

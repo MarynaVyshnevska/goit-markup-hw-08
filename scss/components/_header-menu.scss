@@ -1,0 +1,29 @@
+/* header menu */
+.menu {
+    display: flex;
+    justify-content: flex-start;
+
+    &__nav {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        position: relative;
+        margin-right: 50px;
+        align-items: center;
+    }
+
+    &__link {
+        color: var(--color-accent1);
+        text-decoration: none;
+        letter-spacing: 0.02em;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

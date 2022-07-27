@@ -1,0 +1,20 @@
+// social button 
+
+.social {
+    justify-content: center;
+
+    &__icon {
+        fill: var(--color-clients);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__button {
+        background-color: var(--color-accent0);
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

@@ -1,0 +1,30 @@
+.adr {
+    display: flex;
+
+    &__item {
+        margin-left: 50px;
+        align-items: center;
+    }
+
+    &__link {
+        display: flex;
+        color: var(--color-accent2);
+        text-decoration: none;
+        letter-spacing: 0.02em;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+        fill: var(--color-accent2);
+        margin-right: 10px;
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

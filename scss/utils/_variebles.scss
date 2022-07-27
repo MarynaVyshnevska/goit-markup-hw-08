@@ -1,0 +1,24 @@
+:root {
+    --color-back: #2f303a;
+    --color-back-button: #f5f4fA;
+
+    --color-accent0: #fff;
+    --color-accent1: #212121;
+    --color-accent2: #757575;
+    --color-accent3: rgba(255, 255, 255, 0.6);
+    --color-background1: #e5e5e5;
+    --color-clients: #afb1b8;
+
+    --color-border-modal: rgba(33, 33, 33, 0.2);
+
+
+    --color-link: #2196F3;
+    --color-link-modal: #188ce8;
+
+    --font-family: 'Roboto', sans-serif;
+    --font-second: 'Raleway', sans-serif;
+
+    --for-phone: (min-width: 480px);
+    --for-tablet: (min-width: 768px);
+    --for-desktop: (min-width: 1200px);
+}

@@ -1,0 +1,22 @@
+/* General header+futter */
+
+.menu__link:hover,
+.adr__link:hover,
+.address__text:hover,
+.address__link:hover {
+    color: var(--color-link);
+
+}
+
+.adr__link:hover .adr__icon,
+.adr__link:focus .adr__icon {
+    fill: var(--color-link);
+}
+
+.menu__link:focus,
+.adr__link:focus,
+.address__text:focus,
+.address__link:focus {
+    color: var(--color-link);
+
+}
