@@ -10,6 +10,12 @@
         align-items: center;
     }
 
+    &__tablet-menu {
+        display: none;
+        @media screen and (min-width: 768px){
+            display: flex;
+        }
+    }
     &__item {
         display: flex;
         position: relative;
@@ -26,4 +32,6 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+
 }

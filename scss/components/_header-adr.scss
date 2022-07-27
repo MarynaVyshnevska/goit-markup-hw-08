@@ -1,5 +1,13 @@
 .adr {
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+
 
     &__item {
         margin-left: 50px;
@@ -10,6 +18,12 @@
         display: flex;
         color: var(--color-accent2);
         text-decoration: none;
+        font-size: 12px;
+        line-height: 1.17;
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.14;
+        }
         letter-spacing: 0.02em;
 
         transition-property: color;
@@ -18,10 +32,18 @@
     }
 
     &__icon {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
+        @media screen and (min-width: 1200px) {
+            width: 16px;
+            height: 16px;
+        }
+
         fill: var(--color-accent2);
-        margin-right: 10px;
+        margin-right: 8px;
+        @media screen and (min-width: 1200px) {
+            margin-right: 10px;
+        }
 
         transition-property: fill;
         transition-duration: 250ms;

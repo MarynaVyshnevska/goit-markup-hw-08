@@ -1,4 +1,10 @@
 .about {
+    
+    display: none;
+    @media screen and (max-width: 1200px) {
+        
+    }
+
     padding-top: 0;
 
     &__inner {
