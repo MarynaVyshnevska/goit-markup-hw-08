@@ -1,21 +1,20 @@
 /* header menu */
 .menu {
+    
+
     display: flex;
     justify-content: flex-start;
 
     &__nav {
-        display: flex;
-        justify-content: flex-start;
-        padding: 0;
-        align-items: center;
-    }
-
-    &__tablet-menu {
         display: none;
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px) {
             display: flex;
+            justify-content: flex-start;
+            padding: 0;
+            align-items: center;
         }
     }
+
     &__item {
         display: flex;
         position: relative;
@@ -32,6 +31,4 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-
 }

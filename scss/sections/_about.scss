@@ -1,9 +1,7 @@
 .about {
-    display: none;
-    @media screen and (min-width: 1200px) {
-        display: flex;
+    @media screen and (max-width: 1199px) {
+        display: none;
     }
-
     padding-top: 0;
 
     &__inner {
