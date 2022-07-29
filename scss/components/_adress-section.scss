@@ -1,10 +1,25 @@
 .address {
+    align-items: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        position: absolute;
+        top: 55px;
+        left: 76px;
+    }
     &__inner {
-        margin-top: 20px;
+        margin-top: 12px;
+        @media screen and (max-width: 767px){
+            margin-bottom: 60px;
+        }
     }
 
     &__li {
-        margin-top: 9px;
+        margin-top: 8px;
+
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+            
+        }
     }
 
     &__text,

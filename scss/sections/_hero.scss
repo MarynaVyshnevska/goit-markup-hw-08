@@ -20,10 +20,13 @@
         color: var(--color-accent0);
         text-align: center;
         text-transform: uppercase;
-        min-width: 250px;
+        
         margin-left: auto;
         margin-right: auto;
-
+        @media screen and (max-width: 479px){
+            width: calc(100% - 30px);
+            
+        }
         @media screen and (min-width: 480px) {
            width: 360px;
         }
@@ -34,7 +37,6 @@
             width: 696px;
         }
     }
-
     &__button {
         padding: 10px 30px;
         margin-top: 30px;

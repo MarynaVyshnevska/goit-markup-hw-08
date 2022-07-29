@@ -8,7 +8,7 @@
         height: 20px;
     }
 
-    &__item {
+    &__item:not(:last-child) {
         margin-right: 10px;
     }
 
