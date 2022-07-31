@@ -15,14 +15,20 @@ body {
     font-weight: 400;
     font-style: normal;
 
-
+    &.modal-open {
+        overflow: hidden;
+    }
+    @media screen and (max-width: 767px) {
+        
+        position: relative;
+    }
 }
 
 button {
     cursor: pointer;
 }
 
-a {
+a, a:link, a:visited, a:hover {
     text-decoration: none;
 }
 

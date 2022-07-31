@@ -27,7 +27,12 @@
                         <span class="logo__first">Web</span>
                         <span class="logo__black">Studio</span>
                     </a>
-                    
+                    <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg height="24" width="24" aria-label="Переключатель мобильного меню">
+                            <use class="menu-toggle__icon-open" href="./images/icons.svg#burger">
+                            </use>
+                        </svg>
+                    </button>
                     <ul class="menu__nav">
                         <li class="menu__item">
                             <a class="menu__link" href="./index.html">Студия</a>
@@ -319,7 +324,7 @@
                         <label class="subscription__label" for="user-email"></label>
                         <input class="subscription__input" id="user-email" type="email" name="user-email" placeholder="E-mail"
                             required>
-                        <div class="">
+                        <div class="subscription__button-box">
                             <button class="subscription__button button" type="submit">
                                 Подписаться
                                 <svg class="subscription__icon" aria-hidden="true">
@@ -331,6 +336,71 @@
                 </div>
             </div>
         </footer>
+    <!-- Mobile menu -->
+    <div class="mobile-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu">
+    
+            <svg height="18" width="18" aria-label="Переключатель мобильного меню">
+    
+                <use class="menu-toggle__icon-close" href="./images/icons.svg#close-black">
+                </use>
+            </svg>
+        </button>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__navigation">
+                <li class="mobile-menu__navigation-item">
+                    <a class="mobile-menu__link menu__link" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu__navigation-item">
+                    <a class="mobile-menu__link menu__link here" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__navigation-item">
+                    <a class="mobile-menu__link menu__link" href="#">Контакты</a>
+                </li>
+            </ul>
+    
+            <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contacts-phone">
+                    <a class="mobile-menu__link menu__link here" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="mobile-menu__contacts-email">
+                    <a class="mobile-menu__link adr__link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+    
+            </ul>
+            <ul class="mobile-menu__socials">
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link adr__link" href="#">
+                        Instagram
+                    </a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link adr__link" href="#">
+                        Twitter
+                    </a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link adr__link" href="#">
+                        Facebook
+                    </a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link adr__link" href="#">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--  -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

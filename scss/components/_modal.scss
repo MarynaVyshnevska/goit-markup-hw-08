@@ -2,8 +2,29 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    min-height: 581px;
+    width: calc(100% - 30px);
+    // height: calc(100% - 90px);
+    overflow-y: auto;
+    transform: translate(-50%, -50%);
+    // margin-top: ;
+    @media screen and (max-height: 640px){
+        top: 105%;
+    }
+    @media screen and (min-width: 480px){
+        
+        width: 450px;
+        
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+       
+        width: 528px;
+        
+        
+    }
+
+    
     background-color: var(--color-accent0);
     box-shadow:
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -15,6 +36,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &__inner {
+        
         padding: 40px;
         outline: none;
     }
@@ -22,8 +44,13 @@
     &__title {
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.17;
         text-align: center;
         margin-bottom: 12px;
+        letter-spacing: 0.03em;
+        line-height: 1.5;
+
+        @media screen and (min-width: 1200px){
+            line-height: 1.15;
+        }
     }
 }

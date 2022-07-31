@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 74px;
+    }
 
     &__item {
         background-color: var(--color-link-modal);
