@@ -1,11 +1,12 @@
 .mobile-container {
+    display: flex;
     position: fixed;
+    
     top: 0;
-    left: 0;
+    right: 0;
     width: 100vw;
     height: 100vh;
     min-height: 600px;
-    padding: 48px 40px;
     background-color: var(--color-accent0);
     font-weight: 500;
     
@@ -21,11 +22,16 @@
     &.is-open {
         transform: translateX(0);
     }
-
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
 }
 
 .mobile-menu {
     color: var(--color-accent1);
+    padding: 48px 40px;
     
     &__navigation {
         font-size: 40px;
@@ -73,3 +79,4 @@
 .here {
     color: var(--color-link);
 }
+

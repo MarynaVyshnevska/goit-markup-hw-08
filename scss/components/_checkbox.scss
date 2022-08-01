@@ -78,5 +78,11 @@
     &__text-link {
         color: var(--color-link);
         text-decoration: underline;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
     }
+
+    
 }

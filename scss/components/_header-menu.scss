@@ -1,9 +1,12 @@
 /* header menu */
 .menu {
-    
-
     display: flex;
-    justify-content: flex-start;
+    @media screen and (max-width: 767px){
+        justify-content: space-between;
+        
+        
+    }
+    
 
     &__nav {
         display: none;
