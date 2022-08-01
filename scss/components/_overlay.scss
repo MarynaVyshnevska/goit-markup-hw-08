@@ -14,17 +14,17 @@ $hero-image-gradient: linear-gradient(
             background-image: $hero-image-gradient, 
             url("../images/head/head480.jpg");
 
-            @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+            @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
                 background-image: $hero-image-gradient,
                 url("../images/head/head480@2x.jpg");
             }
 
-            @media (min-device-pixel-ratio: 3), (min-resolution: 3dppx), (min-resolution: 288dpi) {
+            @media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 3dppx), (min-resolution: 288dpi) {
                 background-image: $hero-image-gradient,
                 url("../images/head/head480@3x.jpg");
             }
 
-            @media (min-device-pixel-ratio: 4), (min-resolution: 4dppx), (min-resolution: 384dpi) {
+            @media (min-device-pixel-ratio: 4), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 4dppx), (min-resolution: 384dpi) {
                 background-image: $hero-image-gradient,
                 url("../images/head/head480@4x.jpg");
             }
@@ -35,20 +35,20 @@ $hero-image-gradient: linear-gradient(
                 url("../images/head/head768.jpg");
 
             @media (min-device-pixel-ratio: 2),
-            (min-resolution: 2dppx),
+            (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx),
             (min-resolution: 192dpi) {
                 background-image: $hero-image-gradient,
                     url("../images/head/head768@2x.jpg");
             }
 
-            @media (min-device-pixel-ratio: 3),
+            @media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3),
             (min-resolution: 3dppx),
             (min-resolution: 288dpi) {
                 background-image: $hero-image-gradient,
                     url("../images/head/head768@3x.jpg");
             }
 
-            @media (min-device-pixel-ratio: 3),
+            @media (min-device-pixel-ratio: 4), (-webkit-min-device-pixel-ratio: 4),
             (min-resolution: 4dppx),
             (min-resolution: 384dpi) {
                 background-image: $hero-image-gradient,
@@ -60,21 +60,21 @@ $hero-image-gradient: linear-gradient(
                 url("../images/head/head1600.jpg");
 
             @media (min-device-pixel-ratio: 2),
-            (min-resolution: 2dppx),
+            (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx),
             (min-resolution: 192dpi) {
                 background-image: $hero-image-gradient,
                     url("../images/head/head1600@2x.jpg");
             }
 
             @media (min-device-pixel-ratio: 3),
-            (min-resolution: 3dppx),
+            (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx),
             (min-resolution: 288dpi) {
                 background-image: $hero-image-gradient,
                     url("../images/head/head1600@3x.jpg");
             }
 
-            @media (min-device-pixel-ratio: 3),
-            (min-resolution: 4dppx),
+            @media (min-device-pixel-ratio: 4),
+            (-webkit-min-device-pixel-ratio: 4), (min-resolution: 4dppx),
             (min-resolution: 384dpi) {
                 background-image: $hero-image-gradient,
                     url("../images/head/head1600@4x.jpg");
