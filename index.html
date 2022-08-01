@@ -74,10 +74,10 @@
         </div>
     </header>
     <main>
-        <section class="hero hero__inner overlay"> -->
+        <section class="hero hero__inner overlay">
             <div class="container">
                 <!-- Шапка -->
-                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1> -->
+                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button 
                 class="button hero__button" type="button" style="width: 200px; height:50px;" data-modal-open>
                 Заказать услугу
@@ -162,8 +162,24 @@
                 <ul class="team__inner">
                     <li class="team__item">
                         <img 
-                        src="./images/igor.jpg" alt="product designer" width="270" height="260"
-                        />
+                        loading="lazy"
+                        srcset="./images/igor/igor270.jpg 1x,
+                                ./images/igor/igor270@2x.jpg 2x, 
+                                ./images/igor/igor270@3x.jpg 3x, 
+                                ./images/igor/igor270@4x.jpg 4x, 
+                                ./images/igor/igor354.jpg 1x, 
+                                ./images/igor/igor354@2x.jpg 2x, 
+                                ./images/igor/igor354@3x.jpg 3x, 
+                                ./images/igor/igor354@4x.jpg 4x, 
+                                ./images/igor/igor450.jpg 1x, 
+                                ./images/igor/igor450@2x.jpg 2x, 
+                                ./images/igor/igor450@3x.jpg 3x, 
+                                ./images/igor/igor450@4x.jpg 4x," 
+                        src="./images/igor/igor270.jpg" 
+                        alt="product designer" 
+                        width="100%" 
+                        height="auto"
+                        /> 
                         <h3 class="team__title title">Игорь Демьяненко</h3>
                         <p class="team__text">Product Designer</p>
                         <ul class="social sbl">
